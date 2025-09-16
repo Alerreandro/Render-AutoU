@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Class</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🚀 Email Class</h1>
+            <p>Cole o texto de um email ou faça upload de um arquivo (.txt) para classifica-lo e obter uma
+                sugestão de
+                resposta usando IA.</p>
+        </header>
+
+        <form id="email-form">
+            <textarea id="email-text" name="email_text" rows="10"
+                placeholder="Cole o conteúdo do seu email aqui..."></textarea>
+
+            <div class="file-upload-wrapper">
+                <label for="email-file">Ou faça upload de um arquivo .txt</label>
+                <input type="file" id="email-file" name="email_file" accept=".txt">
+            </div>
+
+            <button type="submit" id="submit-btn">Analisar Email</button>
+        </form>
+
+        <div id="result-container" class="hidden">
+            <h2>Resultado da Análise</h2>
+            <div id="loader" class="hidden">Analisando...</div>
+            <div id="result-content">
+                <div class="result-item">
+                    <h3>Classificação:</h3>
+                    <p id="classification-result"></p>
+                </div>
+                <div class="result-item">
+                    <h3>Sugestão de Resposta:</h3>
+                    <p id="response-suggestion"></p>
+                </div>
+                <div id="error-message" class="error hidden"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
