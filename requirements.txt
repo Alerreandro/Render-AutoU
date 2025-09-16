@@ -1,3 +1,4 @@
+Django
 google-generativeai
 python-decouple
 python-dotenv
