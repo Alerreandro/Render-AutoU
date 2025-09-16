@@ -10,7 +10,7 @@ Email Class é uma aplicação web desenvolvida em Python com Django que ajuda o
 
 ## Instalação
 
-1. Certifique-se de ter o [Python](https://www.python.org/downloads/) e o [Django](https://www.python.org/downloads/) instalados em sua máquina.
+1. Certifique-se de ter o [Python](https://www.python.org/downloads/) e o [Django](https://www.djangoproject.com/download/) instalados em sua máquina.
 
 2. Clone o repositório do projeto:
 
