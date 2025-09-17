@@ -1,4 +1,5 @@
 Django
 google-generativeai
 python-decouple
+psycopg2-binary
 python-dotenv
